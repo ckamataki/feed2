@@ -1,0 +1,70 @@
+@charset "utf-8";
+*{
+	padding:0px;
+	margin:0px;
+}
+#main{
+	width:100px;
+}
+img{
+	border:0px;
+}
+#ViewArea{
+	width:150px;
+	height:150px;
+	overflow:hidden;
+	float:left;
+	z-index:1;
+}
+#ScrollArea{
+	width:150px;
+	height:150px;
+	position:relative;
+	z-index:2;
+}
+
+#feed{
+	height:150px;
+	width:150px;
+	float:inherit;
+	position:relative;	
+	padding:10px 0px 2px 0px;
+	text-align:justify;
+	list-style:none;
+}
+#ScrollArea p{
+	font-size:12px;
+	padding:2px 0px 2px 0px;
+}
+#Topbtn{
+	width:100%;
+	height:50px;
+	overflow:hidden;
+	position:relative;
+	left:25px;
+	/*float:left;*/
+	position:
+	z-index:1;
+	background-image:url(./image/btn_t.jpg);
+	background-repeat:no-repeat;		
+}
+#Topbtn:hover{
+	background-image:url(./image/btn_t_over.jpg);
+	background-repeat:no-repeat;		
+}
+#Bottombtn{
+	width:100%;
+	height:50px;
+	overflow:hidden;
+	position:relative;
+	left:25px;
+	/*float:left;*/
+	/*z-index:1;*/
+	background-image:url(./image/btn_b.jpg);
+	background-repeat:no-repeat;					
+}
+#Bottombtn:hover{
+	/*z-index:1;*/
+	background-image:url(./image/btn_b_over.jpg);
+	background-repeat:no-repeat;					
+}

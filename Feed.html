@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Feed</title>
+
+<SCRIPT type="text/JavaScript">
+<!--
+var max=445;
+var i=1;
+function winScroll(){
+if(i>max){
+return;
+}else{
+scroll(0,i);
+}
+i++;
+setTimeout("winScroll()", 10);
+}
+//-->
+</SCRIPT>
+
+</head>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.zrssfeed.js"></script>
+<script type="text/javascript">
+
+
+
+
+
+
+$(function(){
+	$('#feed').rssfeed('http://suomi-neito.com/rss ',{
+		limit: 10
+	});
+});
+
+$(function(){
+	setInterval( function() {
+			$( "#new_article>li:last-child" ).css({height:'0px'});
+			$( "#new_article>li:last-child" ).prependTo( "#new_article" );		
+			$( "#new_article>li:first-child" ).animate({height:'25px'}, 'slow');
+			}, 3600 );
+		});
+		
+	
+</script>
+
+
+
+<body>
+<div id ="hako" onLoad="winScroll()">
+	<div id="feed">
+    <marquee direction="down" height="縦幅">～</marquee>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+<style>
+#a{
+	background-color:#CCCCCC;
+}
+
+#hako{
+	background-color:#99FFFF;
+	height:150px;
+	width:150px;
+	}
+
+#feed{
+	font-size:15px;
+	overflow:auto;
+	width:150px;
+	height:150px;
+	}
+</style>
