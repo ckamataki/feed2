@@ -4,46 +4,43 @@
 	margin:0px;
 }
 #main{
-	width:100px;
+	width:150px;
 }
 img{
 	border:0px;
 }
 #ViewArea{
-	width:150px;
-	height:150px;
+	width:160px;
+	height:300px;
 	overflow:hidden;
 	float:left;
 	z-index:1;
-}
-#ScrollArea{
-	width:150px;
-	height:150px;
-	position:relative;
-	z-index:2;
+	background-color:#CCFFFF;
 }
 
 #feed{
-	height:150px;
-	width:150px;
-	float:inherit;
+	width:160px;
+	position:relative;
+	background-color:#CCFFFF;
+	overflow:hidden;
+		}
+
+#ScrollArea{
+	width:160px;
+	float:left;
 	position:relative;	
 	padding:10px 0px 2px 0px;
-	text-align:justify;
+	text-align:center;
 	list-style:none;
+	z-index:2;
+	
 }
-#ScrollArea p{
-	font-size:12px;
-	padding:2px 0px 2px 0px;
-}
+
 #Topbtn{
 	width:100%;
 	height:50px;
 	overflow:hidden;
-	position:relative;
-	left:25px;
-	/*float:left;*/
-	position:
+	float:left;
 	z-index:1;
 	background-image:url(./image/btn_t.jpg);
 	background-repeat:no-repeat;		
@@ -56,15 +53,13 @@ img{
 	width:100%;
 	height:50px;
 	overflow:hidden;
-	position:relative;
-	left:25px;
-	/*float:left;*/
-	/*z-index:1;*/
+	float:left;
+	z-index:1;
 	background-image:url(./image/btn_b.jpg);
 	background-repeat:no-repeat;					
 }
 #Bottombtn:hover{
-	/*z-index:1;*/
+	z-index:1;
 	background-image:url(./image/btn_b_over.jpg);
 	background-repeat:no-repeat;					
 }
